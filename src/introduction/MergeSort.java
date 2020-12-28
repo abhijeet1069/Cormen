@@ -7,12 +7,23 @@ public class MergeSort {
 		int n2 = r-q;
 		int[] L = new int[n1+1];
 		int[] R = new int[n2+1];
-		L[n1] = Integer.MAX_VALUE;
-		R[n2] = Integer.MAX_VALUE;
 		for(int i = 0; i < n1; i++)
 			L[i] = arr[p+i];
 		for(int j = 0; j < n2; j++)
 			R[j] = arr[q+j];	
+		L[n1] = Integer.MAX_VALUE;
+		R[n2] = Integer.MAX_VALUE;
+		int i = 0, j = 0;
+		for(int k = p; k <= r; k++){
+			if(L[i] <= R[j]){
+				arr[k] = L[i];
+				i += 1;
+			}
+			else{
+				arr[k] = R[j];
+				j += 1;
+			}
+		}
 	}
 	
 	public static void main(String[] args) {
