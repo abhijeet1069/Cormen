@@ -9,8 +9,8 @@ public class MergeSort {
 		int[] R = new int[n2+1];
 		L[n1] = Integer.MAX_VALUE;
 		R[n2] = Integer.MAX_VALUE;
-		//for(int i = 0; i < n1; i++)
-			
+		for(int i = 0; i < n1; i++)
+			L[i] = arr[p+i];	
 	}
 	
 	public static void main(String[] args) {
