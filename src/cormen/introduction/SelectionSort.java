@@ -1,4 +1,4 @@
-package introduction;
+package cormen.introduction;
 
 /*Find smallest element of A*/
 public class SelectionSort {
