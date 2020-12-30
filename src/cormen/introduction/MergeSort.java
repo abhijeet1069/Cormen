@@ -1,4 +1,4 @@
-package introduction;
+package cormen.introduction;
 
 public class MergeSort {
 
