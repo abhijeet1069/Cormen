@@ -1,2 +1,3 @@
 # Cormen
-Cormen Algorithms
+Aim is to complete Cormen algorithms.
+
